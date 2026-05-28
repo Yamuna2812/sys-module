@@ -1,9 +1,6 @@
-import sys
+import sys 
+print("Total arguments:",len(sys.argv))
 
-num = int(input("Enter a number: "))
-
-if num < 0:
-    print("Negative number not allowed")
-    sys.exit()
-
-print("Valid number")
+for i in range (len(sys.argv)):
+    print(f"Argument{i}={sys.argv[i]}")
+    
